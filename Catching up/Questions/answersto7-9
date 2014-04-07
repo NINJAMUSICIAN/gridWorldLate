@@ -1,0 +1,13 @@
+answers to section 7
+
+1.	The methods implemented in Critter are the act method, the getActors method (to receive the actors), the processActors method (to process the elements of the actors), the getMoveLocations method, and the selectMoveLocation method.
+
+2.	The five basic actions of all critters when they act include getting an actor, processing the actor, getting the location in which to move, selecting the "move location", then moving to said location with processed actor.
+
+3.	Subclasses should not override the getActors method as these subclasses do not declare separate getActors methods.
+
+4.	A critter could process actors by analyzing instances of objects and other actors (obstacles), acting accordingly by removing itself from the grid, and it could also set its color to that of another object adjacent to it.
+
+5.	In order to act, the critter must invoke the processActor method (to set its conditions), selectMoveLocation (to create a location to move to), and the makeMove method (to move there).
+
+6.	There is no Critter constructor since the Critter relies on Actor.

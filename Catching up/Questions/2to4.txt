@@ -1,0 +1,74 @@
+Part 3 Set 1:
+
+1. loc1.getrow();
+
+2. false
+
+3. (4,4)
+
+4. 135(degrees)--Southeast
+
+5. getAdjacentLocation points to the direction of the desired neighbor. It returns the location that is closest to the value provided.
+
+
+-------------------------------------------------------
+
+
+Set 2:
+
+1. If you think that gr is using a Grid object:
+use gr.getOccupiedLocations().size() to find occupied locations. Use gr.getNumRows()*gr.getNumCols() - gr.getOccupiedLocations().size() to find empty locations in a BoundedGrid.
+
+2. gr.isValid(new Location(10, 10));
+
+3. Framework is an interface. In Java, an interface indicates which systems an alternate class must actualize. One can discover the usage of the techniques in the AbstractGrid and the BoundedGrid and UnboundedGrid classes. Since the AbstractGrid just executes a percentage of the obliged systems for the Grid interface, it is known as a dynamic class. The BoundedGrid and UnboundedGrid broaden the AbstractGrid class.
+
+4. Returning the objects in a standard array would be more difficult, not a better design. An array requires the user to size the list prior to filling it, while an ArrayList does not. The ArrayList allows for greater flexibility.
+
+
+-------------------------------------------------------
+
+Set 3:
+
+1. An actor has a direction, location, and color.
+
+2. North. Its color is blue.
+
+3. A class allows for an object to have both a state and behavior, which an actor has. An interface does not allow one to declare implement methods and instance variables.
+
+4a. No, an actor cannot create another instance of itself on the grid.
+b. No, the actor has already been removed once. Removing it twice is not possible and causes confusion.
+c. Yes, an actor can place itself, remove itself, and place itself again.
+
+5. An actor can turn 45 degrees by using the setDirection method.
+
+
+-------------------------------------------------------
+
+Set 4:
+
+1. if(!gr.isValid(next)) 
+ return false;
+
+2. Actor neighbor = gr.get(next); 
+return (neighbor == null) || (neighbor instanceof Flower);
+
+3. isValid and get. These systems are called to guarantee that the following area is a good area in the grid.
+
+4. getAdjacentLocation, to find the bug's next location.
+
+5. getLocation, getGrid, and getDirection
+
+6. The bug will remove itself.
+
+7. Yes, the variable loc is needed. It cannot be avoided as loc stores the bug's location prior to moving.
+
+8. So that one may gauge how long it has been since a bug has been in a location.
+
+9. If one calls removeSelfFromGrid, a flower is not left behind.
+
+10. Flower flower = new Flower(getColor()); 
+flower.putSelfInGrid(gr, loc);
+
+11. Four times.
+

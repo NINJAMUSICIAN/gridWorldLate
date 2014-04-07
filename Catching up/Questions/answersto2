@@ -1,0 +1,15 @@
+Part 2:
+
+1. sideLength defines the amount of steps a boxBug traverses on its axis.
+
+2. The steps example variable stays informed regarding what number of steps a Boxbug has proceeded onward the present side of its box
+
+3. sideLength= 90 degree turn. BoxBug needs two turn methods (45 degrees each) to turn the same as sideLength.
+
+4. BoxBug inherits move from the Bug class
+
+5. Yes. The side length is predetermined.
+
+6. Yes, if an object obstructs the BoxBug's path, it will turn and start a new path.
+
+7. Initially, steps = zero. Steps also = zero when steps = sideLength
